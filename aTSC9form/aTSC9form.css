@@ -1,0 +1,19 @@
+.Upperbox {
+    background-color: lightblue;
+}
+
+.heading1 {
+    font-size: 2.5rem;
+    color: aliceblue;
+    text-align: center;
+    bottom: 200px;
+}
+
+.heading2 {
+    color: white;
+    background-color: blue;
+}
+
+.Phone {
+    margin: left 10px;
+}

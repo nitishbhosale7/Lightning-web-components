@@ -1,0 +1,19 @@
+<template>
+    <lightning-card>
+        <div class="slds-m-around_small">
+            <lightning-progress-bar variant="circular" size="medium" value={val} title="Event bubbling">
+
+            </lightning-progress-bar>
+
+            <lightning-button label="20" variant="brand" onclick={handleChange20}></lightning-button>
+            <lightning-button label="60" variant="brand" onclick={handleChange60}></lightning-button>
+            <lightning-button label="100" variant="brand" onclick={handleChange100}></lightning-button>
+
+            <lightning-input label="Enter the Value" onkeyup={handleChange}>
+
+            </lightning-input>
+
+        </div>
+    </lightning-card>
+    
+</template>

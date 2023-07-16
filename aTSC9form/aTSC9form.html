@@ -1,0 +1,171 @@
+<template>
+    <div class="slds-grid slds-gutters Upperbox">
+        <div class="slds-col">
+          <span>
+            <img src="https://c.tenor.com/bi6qaM5BTmAAAAAi/globe-showing-asia-australia-nature.gif" width="100" height="100">
+          </span>
+        </div>
+        <div class="slds-col">
+          <span> <p class="heading1 slds-m-top_x-large"> Aramco Training Service Company </p> 
+          </span>
+        </div>
+        <div class="slds-col">
+          <span>
+              <img src="https://americas.aramco.com/images/affiliateLogo-2x.png">
+          </span>
+        </div>
+    </div>
+    <div class="slds-theme_shade slds-p-left_medium slds-p-right_medium">
+        <div class="slds-box upperbox2">
+        <h3 class="heading2">Application information</h3>
+
+        </div>
+
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_1-of-3 slds-m-left_small">
+                <span><lightning-input type="text" label="Network ID" class= "slds-size_small"></lightning-input> </span>
+            </div>
+            <div class="slds-col slds-size_2-of-3 slds-m-right_medium">
+                 <span>
+            <lightning-input type="text" label="Badge" class= "slds-size_small slds-container_small" ></lightning-input>    
+                </span>
+             </div>
+        </div>
+
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_4-of-12 slds-m-left_small">
+                <span><lightning-input type="text" label="Last Name" class= "slds-size_small"></lightning-input> </span>
+            </div>
+            <div class="slds-col slds-size_4-of-12 slds-m-right_medium">
+                 <span>
+            <lightning-input type="text" label="First Name" class= "slds-size_small slds-container_small" ></lightning-input>    
+                </span>
+            </div>
+
+            <div class="slds-col slds-size_4-of-12 slds-m-left_small">
+                <span><lightning-input type="text" label="Middle Name" class= "slds-size_small"></lightning-input> </span>
+            </div>
+        </div>
+
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_4-of-12 slds-m-left_small">
+                <span><lightning-input type="text" label="Position Title" class= "slds-size_small"></lightning-input> </span>
+            </div>
+            <div class="slds-col slds-size_4-of-12 slds-m-right_medium">
+                 <span>
+            <lightning-input type="text" label="Grade Code" class= "slds-size_small slds-container_small" ></lightning-input>    
+                </span>
+            </div>
+
+            <div class="slds-col slds-size_4-of-12 slds-m-left_small">
+                <span><lightning-input type="text" label="Hire Date" class= "slds-size_small"></lightning-input> </span>
+            </div>
+        </div>
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_4-of-12 slds-m-left_small">
+                <span><lightning-input type="text" label="Department" class= "slds-size_small"></lightning-input> </span>
+            </div>
+            <div class="slds-col slds-size_4-of-12 slds-m-right_medium">
+                 <span>
+            <lightning-input type="text" label="Division" class= "slds-size_small slds-container_small" ></lightning-input>    
+                </span>
+            </div>
+
+            <div class="slds-col slds-size_4-of-12 slds-m-left_small">
+                <span><lightning-input type="text" label="Unit" class= "slds-size_small"></lightning-input> </span>
+            </div>
+        </div>
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_8-of-12 slds-m-left_small">
+                <span><lightning-input type="text" label="Aramco Email" class= "slds-size_full"></lightning-input> </span>
+            </div>
+            <div class="slds-col slds-size_4-of-12 " >
+                 <span>
+            <lightning-input type="text" label="Office Phone" class= "slds-size_small slds-container_small slds-m-left_small phone" ></lightning-input>    
+                </span>
+            </div>
+        </div>
+
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_8-of-12 slds-m-left_small">
+                <span><lightning-input type="text" label="Personal Email" class= "slds-size_full "></lightning-input> </span>
+            </div>
+            <div class="slds-col slds-size_4-of-12 ">
+                 <span>
+            <lightning-input type="text" label="Mobile Phone" class= "slds-size_small slds-container_small slds-m-left_small phone" ></lightning-input>    
+                </span>
+            </div>
+        </div>
+
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_8-of-12 slds-m-left_small">
+                <span><lightning-input type="text" label="Alternate Email" class= "slds-size_full   "></lightning-input> </span>
+            </div>
+            
+        </div>
+
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_8-of-12 slds-m-left_small">
+                <span><lightning-file-upload
+                    label="Attach receipt"
+                    name="fileUploader"
+                    accept={acceptedFormats}
+                    onuploadfinished={handleUploadFinished}
+                    multiple
+                >
+                </lightning-file-upload> </span>
+            </div>
+
+            <div class="slds-col slds-size_4-of-12 ">
+                <span>
+                    <label><h4>Gender</h4></label>
+                    <select name="Gender" label="Gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Transgender">Transgender</option>
+                    
+                      </select>
+               </span>
+           </div>
+            
+        </div>
+
+        <div class="slds-box upperbox2">
+            <h3 class="heading2">Saudi Package Address</h3>
+    
+         </div>
+
+         
+
+            <lightning-input-address
+                address-label="Address"
+                street-label="Street"
+                city-label="City"
+                country-label="Country"
+                province-label="Province"
+                postal-code-label="PostalCode"
+                street=""
+                city=""
+                country=""
+                province=""
+                postal-code=""
+                field-level-help="Help Text for inputAddress field" ></lightning-input-address>
+            
+    
+                <div class="slds-grid slds-wrap slds-p-bottom_small">
+                    <div class="slds-col slds-size_10-of-12">
+                        <span>
+                <p class="slds-m-top_xx-large"> Step 2 of 5 </p>
+                        </span>
+                    </div>
+
+                    <div class="slds-col slds-size_2-of-12 slds-m-top_xx-large  ">
+                        <span>
+                            <lightning-button class="slds-m-around_medium" label="Back" variant="Neutral"></lightning-button>   <lightning-button label="Next" variant="Brand"></lightning-button>
+                                  
+                        </span>
+                    </div>
+
+                </div>                
+    </div>
+</template>

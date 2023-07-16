@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Child to Parent Communication">
+
+        <lightning-button label="show Model" onclick={handleChange} variant={brand} ></lightning-button>
+        <div>{msg} 
+            <hr>{no}
+        </div>
+        <template if:true={showModal}>
+            <c-c2p-modal-component onclose={closeAll}></c-c2p-modal-component>
+
+            
+        </template>
+
+<template if:true={showModal1}>
+            <c-c2p-Event-Bubbling ondiffer={handlePrint}>
+
+                </c-c2p-Event-Bubbling>
+
+            </template>
+
+</lightning-card>
+
+</template>

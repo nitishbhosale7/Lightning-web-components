@@ -1,0 +1,4 @@
+@import 'c/cssLibrary';
+span {
+    color: var(--lwc-brandAccessible);
+}

@@ -1,0 +1,19 @@
+<template>
+    <lightning-card>
+        <h1> This is Parent Component</h1>
+
+        <c-css-child-comp>
+            <p slot="slot2"> Hello I AM SLOT2</p>
+
+        </c-css-child-comp>
+
+        <div>
+            <c-css-child-comp class="blue">
+                <p slot="slot1"> Hello I AM SLOT1</p>
+                
+            
+            </c-css-child-comp>
+        </div>
+    </lightning-card>
+    
+</template>

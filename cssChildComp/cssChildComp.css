@@ -1,0 +1,9 @@
+:host(.blue) {
+    color: rgb(0, 68, 255);
+    font-size: larger;
+}
+
+:host {
+    color: rgb(208, 255, 0);
+    font-size: larger;
+}

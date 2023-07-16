@@ -1,0 +1,10 @@
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: grey;
+    font-size: x-large;
+}
+
+.header {
+    border-bottom: black solid 2px;
+}

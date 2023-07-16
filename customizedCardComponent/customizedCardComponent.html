@@ -1,0 +1,18 @@
+<template>
+  <article class="slds-card">
+        <div class="slds-media__body">
+            <h2 class="slds-card__header-title">
+                <div  class="slds-card__header-link slds-truncate" title="Accounts">
+                    <slot name="header"></slot>
+                </div>
+            </h2>
+        </div>
+        <div class="slds-no-flex">
+             <slot name="Button"></slot>
+        </div>
+        <div class="slds-card__body slds-card__body_inner"> <slot></slot></div>
+        <footer class="slds-card__footer slds-hide">
+            <slot name="footer" onslotchange={changeHandler}></slot>
+        </footer>
+    </article>  
+</template>
