@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Hunter Offline responce excel file">
+        <div class="slds-p-horizontal_x-small" >
+            <lightning-layout>
+                <lightning-layout-item size="6">
+                    <div class="slds-p-left_medium"> 
+                        <lightning-file-upload
+                            label="Attach Files"
+                            name="uploadFile"
+                            accept={acceptedFormats}
+                            record-id={recordId}    
+                            onuploadfinished={handleUploadFinished}>
+                        </lightning-file-upload>
+                    </div> 
+                </lightning-layout-item>
+                <lightning-layout-item size="6">
+                    <div class="slds-p-left_medium">
+                        Uploaded Files: <br/>
+                        <template if:true={url}>
+                            <img src={url} alt="displayed Image" />
+                        </template>
+</div>
+</lightning-layout-item>
+</lightning-layout>
+</div>
+</lightning-card>
+</template>

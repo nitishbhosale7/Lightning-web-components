@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Record Edit Form">
+        <lightning-record-edit-form object-api-name={object}>
+            <lightning-messages></lightning-messages>
+            <lightning-input-field field-name={accName}></lightning-input-field>
+            <lightning-input-field field-name={AccType}></lightning-input-field>
+            <lightning-input-field field-name={Accphone}></lightning-input-field>
+            <lightning-input-field field-name={AccIndustry}></lightning-input-field>
+            <lightning-button class="slds-m-around_medium" label="Save" type="submit" variant="brand"></lightning-button>
+            <lightning-button class="slds-m-around_medium" label="Cancel" onclick={handleReset} ></lightning-button>
+        </lightning-record-edit-form>
+      
+    </lightning-card>
+   
+</template>

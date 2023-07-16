@@ -1,0 +1,37 @@
+<template>
+        <!-- Rich text editor and formatted output -->
+        <lightning-input-rich-text
+            value={richtext}
+            onchange={handleChange}
+        ></lightning-input-rich-text>
+
+    <template if:false={richtext}>
+        <lightning-card>
+            <div class="slds-m-around_small">
+                <p>Image Preview will be displayed here</p>
+            </div>
+        </lightning-card>
+    </template>
+<template if:true={richtext}>
+    <lightning-card>
+        <div class="image slds-m-around_small ">
+            
+             
+        </div>
+             
+    </lightning-card>
+</template>
+
+
+
+
+<lightning-card>
+    <lightning-file-upload label="Attach receipt" name="fileUploader" accept={acceptedFormats} record-id={myRecordId} onuploadfinished={handleUploadFinished}>
+    </lightning-file-upload>
+
+</lightning-card>
+
+
+
+
+</template>

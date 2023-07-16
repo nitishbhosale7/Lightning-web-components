@@ -1,0 +1,31 @@
+<template>
+    <lightning-card>
+        <div class="slds-box slds-m-around_medium">
+
+            <p>This is a Paragraph</p>
+        </div>
+
+        <div class="slds-box slds-m-around_medium" id="ghost">
+            <h1> Hello I am Nitish </h1>
+            <h2>Hello I am Soham</h2>
+            <h1 style="margin: 20%;"> Hello I am Raj</h1>
+
+            <lightning-button class="slds-m-around_medium" variant="success" label="Click me "  onclick={fetch}></lightning-button>
+        </div>
+
+        <lightning-card>
+            <template for:each={Players} for:item="player">
+
+                <div key={player} class="footballers" style="margin: 5%;">
+                    <li>{player}</li>
+                </div>
+            </template>
+
+<lightning-button class="slds-m-around_medium" variant="success" label="Click me " onclick={fetchone}></lightning-button>
+
+</lightning-card>
+
+
+
+</lightning-card>
+</template>

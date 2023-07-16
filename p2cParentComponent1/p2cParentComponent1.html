@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Parent to child component1">
+        <div class="slds-m-around_small">
+            <lightning-input type="number" label="Enter the value" onkeyup={handleclick}></lightning-input>
+
+            <c-p2c-child-comp-progressbar progress={pvalue} ></c-p2c-child-comp-progressbar>
+        </div>
+    </lightning-card>
+    
+</template>

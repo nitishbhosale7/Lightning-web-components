@@ -1,0 +1,52 @@
+<template>
+    <!-- <lightning-card  variant="Narrow"  title="Hello" icon-name="standard:account">
+        <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+        <p class="slds-p-horizontal_small">Card Body Narrow (custom component)</p>
+        <p slot="footer">Card Footer</p>
+    </lightning-card> -->
+    <div class="slds-m-around_medium">
+    <c-customized-card-component>
+        <h1 slot="header">Header will come here</h1>
+        <div slot="Button" class="slds-float_right"> 
+            <lightning-button-icon icon-name="utility:down"></lightning-button-icon>
+        </div>
+        <h1 slot="footer"> Hello this is footer </h1>
+        <p>This is a body</p>
+    </c-customized-card-component>
+    </div>
+
+    <div class="slds-m-around_medium">
+        <c-customized-card-component>
+            <h1 slot="header">No footer</h1>
+            <div slot="Button" class="slds-float_right"> 
+                <lightning-button-icon icon-name="utility:down"></lightning-button-icon>
+            </div>
+            <!-- <h6 slot="footer"> Hello this is footer </h6> -->
+            <p>This is a body</p>
+        </c-customized-card-component>
+    </div>
+
+    <div class="slds-m-around_medium">
+        <c-customized-card-component>
+            <h1 slot="header">No Button</h1>
+            <!-- <div slot="Button" class="slds-float_right"> 
+                <lightning-button-icon icon-name="utility:down"></lightning-button-icon>
+            </div> -->
+            <h6 slot="footer"> Hello this is footer </h6>
+            <p>This is a body</p>
+        </c-customized-card-component>
+    </div>
+
+    <div class="slds-m-around_medium">
+        <c-customized-card-component>
+            <h1 slot="header">No Body</h1>
+            <div slot="Button" class="slds-float_right"> 
+                <lightning-button-icon icon-name="utility:down"></lightning-button-icon>
+            </div>
+            <h6 slot="footer"> Hello this is footer </h6>
+            <!-- <p>This is a body</p> -->
+        </c-customized-card-component>
+    </div>
+
+
+</template>
