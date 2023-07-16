@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="GetObjectInfo">
+        <template if:true={defaultRecordTypeId}>
+            <div class="slds-m-around_medium">
+                <p>{wiredData.data.defaultRecordTypeId}</p>
+               <p>{wiredData.data.objectName}</p>
+            </div>
+        </template>
+</lightning-card>
+</template>

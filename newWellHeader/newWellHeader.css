@@ -1,0 +1,34 @@
+.header{
+    position: relative;
+    color: white;
+    right: 41%;
+    font-size: x-large;
+    font-weight: lighter; }
+    img{
+        max-width: 100%;
+    position: relative;
+    top: 10%;
+    height: 80px;
+    }
+    .login{
+        color: white;
+        font-size: medium;
+        position: relative;
+        top:40%;
+    }
+
+.content1{
+    color: #3A5DAE;
+        font-size: 3rem;
+        position: relative;
+        top:40%;
+        text-align: center;
+        width: 599px;
+  height: 96px;
+  background-color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  font-family: 'RobotoSlab-Bold', 'Roboto Slab Bold', 'Roboto Slab', sans-serif;
+  font-weight: 700;
+  color: #3a5dae;
+  line-height: normal;
+}

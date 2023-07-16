@@ -1,0 +1,40 @@
+<template>
+ <lightning-card title="Iterator List">
+    
+    <template iterator:ceo={ceoList}>
+
+        <div key={ceo.value.id} class="slds-m-around_medium">
+
+            <template if:true={ceo.first}>
+                <div class="slds-theme_shade slds-box">
+                    <strong>List of CEO</strong>
+
+                </div>
+
+            </template>
+
+<ul class="slds-has-dividers_top-space">
+    <li class="slds-item"><strong> {ceo.value.company}</strong> {ceo.value.name}</li>
+
+</ul>
+
+
+<template if:true={ceo.last}>
+        <div class="slds-theme_shade slds-box">
+            <strong>Thank you</strong>
+
+        </div>
+
+    </template>
+
+</div>
+
+
+
+
+
+</template>
+
+</lightning-card>
+
+</template>
